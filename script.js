@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
         let randomY = Math.floor(Math.random() * 100);
         btnNo.style.left = randomX + '%';
         btnNo.style.top = randomY + '%';
-        contador=contador*2;
+        contador=contador*1.2;
         btnSi.style.transform = 'scale('+contador+')';
         btnSi.style.zIndex=2;
     })
 
     btnSi.addEventListener('click', ()=>{
         frente.style.display='flex';
+        btnSi.style.zIndex=0;
     })
 })
